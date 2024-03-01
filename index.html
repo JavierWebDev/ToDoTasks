@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>ToDo Task</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo-principal">ToDo Tasks</h1>
+    </header>
+
+    <main>
+        <section id="SectionAddTask" class="contenedor-anadir_tareas">
+            <h2 class="contenedor-subtitulo">Añadir tarea</h2>
+            
+            <form id="ContenedorFormulario" class="contenedor-formulario_anadir">
+                <div class="contenedor-anadir_nombre">
+                    <label class="contenedor-label" for="InputNombreTarea">Nombre De La Tarea:</label>
+                    <input class="input" id="InputNombreTarea" type="text">
+                </div>
+
+                <div class="contenedor-anadir_fecha">
+                    <label class="contenedor-label" for="InputFechaInicio">Fecha De Inicio:</label>
+                    <input class="input-fecha" type="date" id="InputFechaInicio" class="anadir-fecha">
+
+                    <label class="contenedor-label" for="InputFechaFin">Fecha De Fin:</label>
+                    <input class="input-fecha" type="date" id="InputFechaFin" class="anadir-fecha">
+                </div>
+
+                <div class="contenedor-añadir_descripcion">
+                    <label class="contenedor-label" for="InputDescripcion">Descripcion:</label>
+                    <textarea id="InputDescripcion"></textarea>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
