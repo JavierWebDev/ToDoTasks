@@ -24,6 +24,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    width: 100%;
 }
 
 a {
@@ -231,4 +232,56 @@ taskadd-form {
     background-color:darkgreen;
     border: solid 3px var(--color-primario);
     scale: 1.2;
+}
+
+/* CHECK TASKS */
+
+.contenedor-marcar_tareas {
+    background-color: var(--color-cuaternario);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenedor-tareas_select {
+    background-color: var(--color-quinto);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tarea-check {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.nombre-tarea {
+    padding: 5px;
+    color: white;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.seleccionar-btn {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+
+    transition: all 0.3s ease;
+}
+.seleccionar-btn:hover {
+    scale: 1.4;
+}
+
+/* ESTILOS TAREAS */
+
+.prioridad-alta {
+    background-color: #fe533e;
+    border: 1px solid #ff1c00;
+}
+.prioridad-baja {
+    background-color: #84df72;
+    border: 1px solid #2aff00;
 }
