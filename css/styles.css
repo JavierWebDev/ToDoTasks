@@ -72,11 +72,11 @@ a {
 /* AÑADIR TAREAS */
 
 taskadd-form {
-    width: 50%;
+    width: 80%;
+    margin-top: 2%;
 }
 
 .contenedor-anadir_tareas {
-    margin-top: 5%;
     background-color: var(--color-terciario);
     padding: 30px;
     border-radius: 10px;
@@ -236,6 +236,11 @@ taskadd-form {
 
 /* CHECK TASKS */
 
+check-tasks {
+    margin-top: 10%;
+    width: 60%;
+}
+
 .contenedor-marcar_tareas {
     background-color: var(--color-cuaternario);
     padding: 20px;
@@ -255,6 +260,7 @@ taskadd-form {
     align-items: center;
     width: 100%;
     padding: 10px;
+    margin: 5px;
 }
 
 .nombre-tarea {
@@ -284,4 +290,85 @@ taskadd-form {
 .prioridad-baja {
     background-color: #84df72;
     border: 1px solid #2aff00;
+}
+
+/* SECCION VER TAREAS */
+
+state-tasks {
+    margin-top: 10%;
+    width: 75%;
+    margin-bottom: 5%;
+}
+
+.contenedor-mostrar_tareas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-tareas_completadas {
+    display: flex;
+    flex-direction: column;
+    background-color:#84df72;
+    border: 2px solid #2aff00;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+.contenedor-tareas_fallidas {
+    display: flex;
+    flex-direction: column;
+    background-color:#fe533e;
+    border: 2px solid #ff1c00;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.titulo-tareas_completadas {
+    background-color: #2aff00;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.titulo-tareas_fallidas {
+    background-color: #ff1c00;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contenedor-mostrar{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.tarea-estado {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    height: 80px;
+}
+
+.button-ver {
+    padding: 10px 30px;
+    border: none;
+    background-color: var(--color-primario);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.button-ver:hover {
+    scale: 1.1;
+    background-color: white;
+    border: solid 2px var(--color-primario);
+    color: var(--color-primario);
 }

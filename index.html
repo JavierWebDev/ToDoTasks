@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <script type="module" src="app.js" defer></script>
+    <script src="/js.js" defer></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>ToDo Task</title>
 </head>
@@ -13,9 +14,9 @@
         <h1 class="titulo-principal">ToDo Tasks</h1></a>
 
         <nav class="nav-bar_container">
-            <button class="button-nav" id="BtnAnadirTarea"><box-icon name='plus-circle' color='#ffffff' ></box-icon></button>
-            <button class="button-nav" id="BtnGestorTareas"><box-icon name='check-circle' type='solid' color='#ffffff' ></box-icon></button>
-            <button class="button-nav" id="BtnEstadoTareas"><box-icon name='plus-circle' color='#ffffff' ></box-icon></button>
+            <button onclick="MostrarAnadir()" class="button-nav" id="BtnAnadirTarea"><box-icon name='plus-circle' color='#ffffff' ></box-icon></button>
+            <button onclick="MostrarCheck()" class="button-nav" id="BtnGestorTareas"><box-icon name='check-circle' type='solid' color='#ffffff' ></box-icon></button>
+            <button onclick="MostrarEstados()" class="button-nav" id="BtnEstadoTareas"><box-icon name='search' color='#ffffff' ></box-icon></button>
         </nav>
     </header>
 
@@ -23,6 +24,8 @@
         <taskadd-form></taskadd-form>
     
         <check-tasks></check-tasks>
+
+        <state-tasks></state-tasks>
     </main>
 </body>
 </html>

@@ -12,6 +12,8 @@ export class MarcarTarea extends HTMLElement {
 				<div id="Tarea" class="tarea-check prioridad-baja">
 					<h3 class="nombre-tarea" id="NombreTarea">xxxx</h3>
 
+					<label for="NombreTarea" id="LabelIntensidad class="">xxx</label>
+
 					<div id="ContenedorSeleccionar" class="contenedor-select_check">
 						<button id="BotonCompletada" class="seleccionar-btn"><box-icon name='check-circle' color='#56d324' ></box-icon></button>
 						<button id="BotonPendiente" class="seleccionar-btn"><box-icon name='x-circle' color='#ec2a13'></box-icon></button>
