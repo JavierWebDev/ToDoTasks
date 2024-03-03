@@ -21,53 +21,214 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
+
+a {
+    text-decoration: none;
+}
+
+
 
 /* HEADER */
 
+.nav-bar{
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .titulo-principal {
     color: white;
-    background-color: var(--color-primario);
-    padding: 20px;
     font-size: 2.5rem;
+    margin: 20px;
+}
+
+.nav-bar_container {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-nav {
+    padding: 15px;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    border: none;
+
+    transition: all 0.2s ease;
+}
+.button-nav:hover {
+    background-color:darkgreen;
+    scale: 1.2;
 }
 
 /* AÑADIR TAREAS */
 
+taskadd-form {
+    width: 50%;
+}
+
 .contenedor-anadir_tareas {
     margin-top: 5%;
     background-color: var(--color-terciario);
-    width: 40%;
     padding: 30px;
     border-radius: 10px;
 }
 
 .contenedor-subtitulo {
     color: var(--color-quinto);
+    text-align: center;
 }
 
 .contenedor-formulario_anadir {
-    padding: 10px;
-    border: solid 3px var(--color-cuaternario);
+    padding: 30px;
+    border: solid 3px var(--color-quinto);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
+}
+
+.contenedor-anadir_nombre {
+    width: 100%;
+    border: solid 2px var(--color-cuaternario);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
 }
 
 .input {
     width: 80%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--color-quinto);
 }
 
 .contenedor-anadir_fecha {
     display: flex;
-    width: 80%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
+    border: solid 2px var(--color-cuaternario);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenedor-inputs, .contenedor-inputs_fechas {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-primario);
+    padding: 20px;
+    border-radius: 10px;
+}
+.contenedor-label {
+    font-size: 1.2rem;
+    color: #283618;
+    border-right: 2px double var(--color-cuaternario);
+    border-bottom: 0;
+    width: 15%;
+}
+.contenedor-label_fechas {
+    border-bottom: 2px double white;
+
+}
+.contenedor-inputs_fechas {
+    color: white;
+    font-size: 1.5rem;
 }
 
 .input-fecha {
+    width: 100%;
+}
 
+.contenedor-anadir_descripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border: solid 2px var(--color-cuaternario);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.contenedor-label_descripcion {
+    border-bottom: none;
+    border-right: solid 2px var(--color-cuaternario);
+    padding: 8px;
+    display: flex;
+}
+.input-descripcion {
+    width: 80%;
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    border: solid 2px var(--color-quinto);
+}
+
+
+.contenedor-anadir_importancia {
+    width: fit-content;
+    border: solid 2px var(--color-primario);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.contenedor-label_importancia {
+    border-bottom: none;
+    border-right: solid 2px var(--color-cuaternario);
+    padding: 20px;
+    width: 200px;
+}
+.contenedor-input_importancia {
+    padding: 15px;
+    margin: 5px;
+}
+.input-importancia {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px var(--color-terciario);
+}
+.input-importancia:hover {
+    border: solid 2px red;
+}
+
+.input-enviar_tarea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-enviar {
+    padding: 15px;
+    background-color: var(--color-primario);
+    border: solid 3px darkgreen;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+
+    transition: all 0.2s ease;
+}
+.input-enviar:hover {
+    background-color:darkgreen;
+    border: solid 3px var(--color-primario);
+    scale: 1.2;
 }

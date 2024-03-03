@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <script type="module" src="app.js" defer></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>ToDo Task</title>
 </head>
 <body>
-    <header>
-        <h1 class="titulo-principal">ToDo Tasks</h1>
+    <header class="nav-bar"><a href="index.html">
+        <h1 class="titulo-principal">ToDo Tasks</h1></a>
+
+        <nav class="nav-bar_container">
+            <button class="button-nav" id="BtnAnadirTarea"><box-icon name='plus-circle' color='#ffffff' ></box-icon></button>
+            <button class="button-nav" id="BtnGestorTareas"><box-icon name='check-circle' type='solid' color='#ffffff' ></box-icon></button>
+            <button class="button-nav" id="BtnEstadoTareas"><box-icon name='plus-circle' color='#ffffff' ></box-icon></button>
+        </nav>
     </header>
 
     <main>
-        <section id="SectionAddTask" class="contenedor-anadir_tareas">
-            <h2 class="contenedor-subtitulo">Añadir tarea</h2>
-            
-            <form id="ContenedorFormulario" class="contenedor-formulario_anadir">
-                <div class="contenedor-anadir_nombre">
-                    <label class="contenedor-label" for="InputNombreTarea">Nombre De La Tarea:</label>
-                    <input class="input" id="InputNombreTarea" type="text">
-                </div>
+        <taskadd-form>
 
-                <div class="contenedor-anadir_fecha">
-                    <label class="contenedor-label" for="InputFechaInicio">Fecha De Inicio:</label>
-                    <input class="input-fecha" type="date" id="InputFechaInicio" class="anadir-fecha">
+        </taskadd-form>
+    
+        <section id="SectionMarcar" class="contenedor-marcar_tareas">
+            <h2 class="contenedor-subtitulo">Gestor De Tareas</h2>
 
-                    <label class="contenedor-label" for="InputFechaFin">Fecha De Fin:</label>
-                    <input class="input-fecha" type="date" id="InputFechaFin" class="anadir-fecha">
-                </div>
+            <div id="ContenedorMarcarEstado" class="contenedor-tareas_select">
+                <div id="TareaSeleccionar" class="tarea-check">
+                    <h3 id="Nombre Tarea">xxxx</h3>
 
-                <div class="contenedor-añadir_descripcion">
-                    <label class="contenedor-label" for="InputDescripcion">Descripcion:</label>
-                    <textarea id="InputDescripcion"></textarea>
+                    <div id="ContenedorSeleccionar" class="contenedor-select_check">
+                        <button><box-icon name='check' color='#ffffff' ></box-icon></button>
+                        <button><box-icon type='solid' name='x-circle'></box-icon></button>
+                    </div>
                 </div>
-            </form>
+            </div>
         </section>
     </main>
 </body>
