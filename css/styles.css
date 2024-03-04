@@ -76,6 +76,14 @@ taskadd-form {
     margin-top: 2%;
 }
 
+.contenedor-botones_generales {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .contenedor-anadir_tareas {
     background-color: var(--color-terciario);
     padding: 30px;
@@ -280,6 +288,32 @@ check-tasks {
 .seleccionar-btn:hover {
     scale: 1.4;
 }
+/* CONTENEDOR BOTONES ACTIVAR */
+
+.button-activate_add {
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    border-top: 2px solid var(--color-terciario);
+    border-right: 2px solid var(--color-terciario);
+    border-left: 2px solid var(--color-terciario);
+    border-bottom: none;
+    border-radius: 10px;
+
+    transition: background-color 0.3s ease;
+}
+.button-activate_add:hover {
+    background-color: var(--color-secundario);
+}
+
+.disabled {
+    padding: 10px 20px;
+    background-color: var(--color-cuaternario);
+    border-radius: 10px;
+    border: none;
+
+    transition: none;
+}
+
 
 /* ESTILOS TAREAS */
 
